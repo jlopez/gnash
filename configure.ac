@@ -511,8 +511,8 @@ if test x$cross_compiling = xyes; then
   if test x${pkgroot} = "/usr"; then
     export pkgroot=""
   fi
-  export incllist="`eval echo ${with_top_level}/include ${pkgroot}/${host_alias}/include ${pkgroot}/include`"
-  export libslist="`eval echo ${with_top_level}/lib ${pkgroot}/${host_alias}/lib ${pkgroot}/lib64 ${pkgroot}/lib32 ${pkgroot}/lib`"
+  export incllist="`eval echo ${prefix}/include ${with_top_level}/include ${with_top_level}/usr/include ${pkgroot}/${host_alias}/include ${pkgroot}/include`"
+  export libslist="`eval echo ${prefix}/lib ${with_top_level}/lib ${with_top_level}/usr/lib ${pkgroot}/${host_alias}/lib ${pkgroot}/lib64 ${pkgroot}/lib32 ${pkgroot}/lib`"
   export pathlist="`eval echo ${pkgroot}/${host_alias}/bin:${pkgroot}/bin`"
   npapi=no
 else

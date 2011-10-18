@@ -725,6 +725,7 @@ dnl  Media handler selection
 dnl --------------------------------------------------------
 build_media_gst=no
 build_media_ffmpeg=auto
+build_media_ios=no
 build_media_none=no
 AC_ARG_ENABLE(media,
   AC_HELP_STRING([--enable-media=handler],
@@ -747,6 +748,10 @@ AC_ARG_ENABLE(media,
         FFMPEG|ffmpeg)
           build_media_ffmpeg=yes
           media_list="${media_list}ffmpeg "
+          ;;
+        IOS|ios)
+          build_media_ios=yes
+          media_list="${media_list}ios "
           ;;
         no|NO|none)
           build_media_none=yes
@@ -773,7 +778,7 @@ AC_ARG_ENABLE(media,
 )
 
 dnl If no render is selected, and media handling isn't disabled, them enable gst
-if test x${build_media_none} = xno -a x${build_media_gst} = xno -a x${build_media_ffmpeg} = xno; then
+if test x${build_media_none} = xno -a x${build_media_gst} = xno -a x${build_media_ffmpeg} = xno -a x${build_media_ios} = xno; then
   build_media_gst=yes
 fi
 
@@ -2506,6 +2511,10 @@ fi
 
 if test x"${build_media_haiku}" = x"yes"; then
   AC_DEFINE([ENABLE_HAIKU_MEDIA],  [1], [Use haiku for media decoding])
+fi
+
+if test x"${build_media_ios}" = x"yes"; then
+  AC_DEFINE([ENABLE_IOS_MEDIA],  [1], [Use iOS for media decoding])
 fi
 
 if test x$build_sound_mkit = xyes; then

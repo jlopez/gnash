@@ -125,6 +125,9 @@ MediaHandler::createFlashAudioDecoder(const AudioInfo& info)
 #ifdef ENABLE_HAIKU_MEDIA
 #include "haiku/MediaHandlerHaiku.h"
 #endif
+#ifdef ENABLE_IOS_MEDIA
+#include "ios/MediaHandlerIOS.h"
+#endif
 
 namespace gnash {
 namespace media {
@@ -141,6 +144,9 @@ RegisterAllHandlers::RegisterAllHandlers()
 #ifdef ENABLE_HAIKU_MEDIA
     static const MediaFactory::RegisterHandler<haiku::MediaHandlerHaiku>
         haiku("haiku");
+#endif
+#ifdef ENABLE_IOS_MEDIA
+    static const MediaFactory::RegisterHandler<ios::MediaHandlerIOS> ios("ios");
 #endif
 }
 

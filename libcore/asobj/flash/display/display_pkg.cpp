@@ -24,7 +24,7 @@
 #include "VM.h"
 #include "fn_call.h"
 #include "MovieClip.h"
-#include "display/BitmapData_as.h"
+#include "BitmapData_as.h"
 #include "namedStrings.h"
 #include "display_pkg.h"
 #include "Global_as.h"

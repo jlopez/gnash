@@ -17,7 +17,7 @@
 
 
 #include "Bitmap.h"
-#include "flash/display/BitmapData_as.h"
+#include "BitmapData_as.h"
 #include "GnashImage.h"
 #include "FillStyle.h"
 #include "DynamicShape.h"

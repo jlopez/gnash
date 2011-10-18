@@ -36,7 +36,7 @@
 #include "zlib_adapter.h"
 #include "SWFMovieDefinition.h"
 #include "SWF.h"
-#include "swf/TagLoadersTable.h"
+#include "TagLoadersTable.h"
 #include "GnashException.h"
 #include "RunResources.h"
 #include "Renderer.h"

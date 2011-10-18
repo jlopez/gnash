@@ -57,7 +57,7 @@
 #include "namedStrings.h"
 #include "LineStyle.h"
 #include "PlaceObject2Tag.h" 
-#include "flash/geom/Matrix_as.h"
+#include "Matrix_as.h"
 #include "GnashNumeric.h"
 #include "InteractiveObject.h"
 #include "DisplayObjectContainer.h"

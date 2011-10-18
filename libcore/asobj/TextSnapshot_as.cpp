@@ -34,7 +34,7 @@
 #include "DisplayList.h"
 #include "MovieClip.h"
 #include "Font.h"
-#include "swf/TextRecord.h"
+#include "TextRecord.h"
 #include "RGBA.h"
 #include "GnashNumeric.h"
 #include "namedStrings.h"

@@ -23,7 +23,7 @@
 
 #include "MovieClip.h"
 #include "Movie.h"
-#include "display/BitmapData_as.h"
+#include "BitmapData_as.h"
 #include "NetStream_as.h"
 #include "movie_root.h"
 #include "GnashNumeric.h"

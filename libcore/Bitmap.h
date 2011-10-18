@@ -21,7 +21,7 @@
 
 #include <boost/intrusive_ptr.hpp>
 #include "DisplayObject.h" 
-#include "flash/display/BitmapData_as.h"
+#include "BitmapData_as.h"
 #include "BitmapMovieDefinition.h"
 #include "DynamicShape.h"
 

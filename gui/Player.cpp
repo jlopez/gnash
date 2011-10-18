@@ -41,8 +41,8 @@
 #include "MovieClip.h" // for setting FlashVars
 #include "movie_root.h" 
 #include "StreamProvider.h"
-#include "swf/TagLoadersTable.h"
-#include "swf/DefaultTagLoaders.h"
+#include "TagLoadersTable.h"
+#include "DefaultTagLoaders.h"
 #include "NamingPolicy.h"
 #include "StringPredicates.h"
 #include "URL.h"

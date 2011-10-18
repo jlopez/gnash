@@ -149,7 +149,7 @@ AGG resources
 #include "GnashImage.h"
 #include "log.h"
 #include "Range2d.h"
-#include "swf/ShapeRecord.h" 
+#include "ShapeRecord.h"
 #include "GnashNumeric.h"
 #include "SWFCxForm.h"
 #include "FillStyle.h"

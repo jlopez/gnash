@@ -32,7 +32,7 @@
 #include "sprite_definition.h"
 #include "SWFMovieDefinition.h"
 #include "SWF.h"
-#include "swf/TagLoadersTable.h"
+#include "TagLoadersTable.h"
 #include "URL.h"
 #include "GnashException.h"
 #include "sound_definition.h"
